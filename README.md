@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ssr. Frontend Developer (NextJS)
 
-## Getting Started
+Este trabajo práctico tiene como objetivo principal conocer las mejores prácticas del candidato. Se solicita tomarse el tiempo de leer bien la consigna y entregar el mejor desarrollo posible. **Todo componente agregado será considerado como un Plus.**
 
-First, run the development server:
+## 🤔 Antes de arrancar, debes tener en cuenta:
+- Se espera que la persona sea **creativa** 🎨.
+- Programe de forma **componentizada y ordenada** 🏗️.
+- Respete los **requests** que pedimos 🤓.
+- Aplicá validaciones, por ejemplo, que no se muestren las tres secciones de episodios hasta no seleccionar el personaje de la sección #1 y de la sección #2 ☑️.
+- La API a utilizar puede ser **REST API o GraphQL**, es indiferente para nosotros 😇.
+- Se espera que no sea un trabajo de más de **8 horas** como mucho ⏰.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🎯 Objetivo:
+<aside>
+💡 **Obligatorio**: Recordá abrir un repositorio público (puede ser Github, Gitlab, Bitbucket…).  
+**Nice to Have**: Deseable que el proyecto esté deployado en un servidor (gratuito).  
+**Nice to Have**: Deseable que el proyecto tenga testings.
+</aside>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Se utilizará la API de **Rick and Morty**: ["https://rickandmortyapi.com/"](https://rickandmortyapi.com/) cumpliendo con los siguientes objetivos:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Obtener un listado de personajes, listándolos de forma paginada, en dos secciones: **Character #1** y **Character #2**.
+2. Cada personaje debe mostrarse como una **"Card"** con su status y su especie.
+3. Debajo de estos dos listados, habrá tres secciones:
+   - **Character #1 - Only Episodes** → Aquí deben listarse únicamente los episodios en donde aparece solo el Personaje seleccionado en la sección **Character #1**.
+   - **Character #1 & Character #2 - Shared Episodes** → Aquí deben listarse los episodios donde aparecen los personajes seleccionados en las secciones **Character #1** y **Character #2**.
+   - **Character #2 - Only Episodes** → Aquí deben listarse únicamente los episodios en donde aparece solo el Personaje seleccionado en la sección **Character #2**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![image](https://github.com/user-attachments/assets/c4808f4f-0e99-458f-b71a-927ecfe909b3)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Criterio de Evaluación:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Este test será evaluado de la siguiente manera:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Funcionalidad**: ¿La aplicación cumple con todo lo requerido?
+- **Code Quality**: ¿El código está bien estructurado, limpio y es escalable?
+- **UI/UX**: ¿El frontend es intuitivo y visualmente tiene una buena UX?
+- **Creatividad**: ¿Hay algún componente, feature o cuestión que destaque por sobre la consigna?
+- **Testing**: ¿Los test unitarios del frontend están desarrollados para probar la funcionalidad?
