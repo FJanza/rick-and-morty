@@ -2,7 +2,6 @@ import React from "react";
 import Tag from "../Tag";
 import {CardProps} from "./types";
 import {DialogInfo} from "../DialogInfo";
-import {Button} from "../ui/button";
 
 const Card = ({character, onClick, isSelected, id}: CardProps) => {
   return (

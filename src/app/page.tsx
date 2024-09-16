@@ -2,7 +2,6 @@
 import CharacterSelector from "@/components/CharacterSelector";
 import EpisodesList from "@/components/EpisodesList";
 import {Character} from "@/Types/character";
-import Image from "next/image";
 import {useState} from "react";
 
 export default function Home() {
