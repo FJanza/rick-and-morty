@@ -1,5 +1,3 @@
-import {Character} from "@/Types/character";
-
 export interface EpisodeListProps {
   chEpLeft?: string[];
   chEpRight?: string[];

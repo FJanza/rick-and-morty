@@ -37,7 +37,7 @@ const EpisodesList = ({
   const getEpisodesOfTwoCh = async (urls?: string[]) => {
     setEpOfTwoCh([]);
     if (urls) {
-      const repetidos = urls.reduce((acc: any, el) => {
+      const repetidos = urls.reduce((acc: {[key: string]: number}, el) => {
         acc[el] = (acc[el] || 0) + 1;
         return acc;
       }, {});

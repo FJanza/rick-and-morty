@@ -1,8 +1,7 @@
-import {render, screen, fireEvent, waitFor} from "@testing-library/react";
+import {render, screen, waitFor} from "@testing-library/react";
 import CharacterSelector from "@/components/CharacterSelector";
 import {getCharactersPerPage, getDataFromUrl} from "@/service/service";
 import {Character, Info, Location} from "@/Types/character";
-import {act} from "react";
 
 jest.mock("@/service/service", () => ({
   getCharactersPerPage: jest.fn(),

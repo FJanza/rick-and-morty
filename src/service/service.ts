@@ -7,7 +7,7 @@ export const getCharactersPerPage = async (pageNumber?: number) => {
       : "https://rickandmortyapi.com/api/character"
   }`;
 
-  let config = {
+  const config = {
     method: "get",
     maxBodyLength: Infinity,
     url: url,
@@ -26,7 +26,7 @@ export const getCharactersPerPage = async (pageNumber?: number) => {
 };
 
 export const getDataFromUrl = async (url: string) => {
-  let config = {
+  const config = {
     method: "get",
     maxBodyLength: Infinity,
     url: url,

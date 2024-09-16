@@ -1,4 +1,4 @@
-import {Character, Status} from "@/Types/character";
+import {Character} from "@/Types/character";
 
 export interface CardProps {
   id: string;
