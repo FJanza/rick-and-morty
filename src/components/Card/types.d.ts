@@ -1,7 +1,9 @@
-import {Status} from "@/Types/character";
+import {Character, Status} from "@/Types/character";
 
 export interface CardProps {
-  img: string;
-  name: string;
-  state: Status;
+  id: string;
+  character: Character;
+  onClick?: VoidFunction;
+  onClickIcon?: VoidFunction;
+  isSelected?: boolean;
 }

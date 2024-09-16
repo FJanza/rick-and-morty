@@ -1,6 +1,6 @@
-import {Status} from "@/Types/character";
+import {Gender, Status} from "@/Types/character";
 
 export interface TagProps {
-  state: Status;
+  value: Status | Gender;
   style?: React.CSSProperties;
 }
