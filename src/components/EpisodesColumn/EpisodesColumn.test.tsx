@@ -39,10 +39,10 @@ describe("EpisodesColumn", () => {
     );
     expect(screen.getByText("Rick Sanchez - 2 Episodes")).toBeInTheDocument();
     expect(
-      screen.getByText("1 - Pilot - December 2, 2013")
+      screen.getByText("S01E01 - Pilot - December 2, 2013")
     ).toBeInTheDocument();
     expect(
-      screen.getByText("28 - The Ricklantis Mixup - September 10, 2017")
+      screen.getByText("S03E07 - The Ricklantis Mixup - September 10, 2017")
     ).toBeInTheDocument();
   });
 

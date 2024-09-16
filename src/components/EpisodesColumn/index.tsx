@@ -15,7 +15,7 @@ const EpisodesColumn = ({name, episodes, id}: EpisodesColumnProps) => {
       {episodes?.length > 0 ? (
         episodes.map((ep) => (
           <span key={ep.name}>
-            {ep.id} - {ep.name} - {ep.air_date}
+            {ep.episode} - {ep.name} - {ep.air_date}
           </span>
         ))
       ) : (
