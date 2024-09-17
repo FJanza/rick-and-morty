@@ -1,4 +1,26 @@
-# Ssr. Frontend Developer (NextJS)
+# Ssr. Frontend Developer Challenge (NextJS)
+
+
+## Run proyect in local:
+
+```bash
+  npm install 
+```
+Luego    
+
+```bash
+  npm run dev 
+```
+    
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test
+```
+
+# Challenge description
 
 Este trabajo práctico tiene como objetivo principal conocer las mejores prácticas del candidato. Se solicita tomarse el tiempo de leer bien la consigna y entregar el mejor desarrollo posible. **Todo componente agregado será considerado como un Plus.**
 
