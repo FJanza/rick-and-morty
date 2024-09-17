@@ -40,7 +40,7 @@ export const DialogInfo = ({character}: DialogInfoProps) => {
       <AlertDialogTrigger asChild>
         <MoreHorizontalIcon
           color="black"
-          className="bg-slate-400 rounded-full p-1 hover:bg-slate-500"
+          className="bg-slate-400 rounded-full p-1 hover:bg-slate-500 absolute bottom-2 right-2 cursor-pointer"
           role="open-button"
         />
       </AlertDialogTrigger>
