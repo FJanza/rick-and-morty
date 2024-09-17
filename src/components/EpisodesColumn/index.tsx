@@ -19,7 +19,7 @@ const EpisodesColumn = ({name, episodes, id}: EpisodesColumnProps) => {
           </span>
         ))
       ) : (
-        <span>There are no chapters</span>
+        <span>There are no episodes</span>
       )}
     </div>
   );

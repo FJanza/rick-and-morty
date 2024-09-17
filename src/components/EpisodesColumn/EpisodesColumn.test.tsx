@@ -46,9 +46,9 @@ describe("EpisodesColumn", () => {
     ).toBeInTheDocument();
   });
 
-  test("test_display_no_chapters_message", () => {
+  test("test_display_no_episodes_message", () => {
     render(<EpisodesColumn name="Messi" episodes={[]} id="test-id" />);
-    expect(screen.getByText("There are no chapters")).toBeInTheDocument();
+    expect(screen.getByText("There are no episodes")).toBeInTheDocument();
   });
 
   test("test_apply_id_prop_correctly", () => {
