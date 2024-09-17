@@ -5,10 +5,8 @@ import {DialogInfo} from "../DialogInfo";
 
 const Card = ({character, onClick, isSelected, id}: CardProps) => {
   return (
-    <div className="relative">
+    <div className="relative" id={id} data-testid={id}>
       <div
-        id={id}
-        data-testid={id}
         style={{borderColor: isSelected ? "rgb(32 211 238)" : ""}}
         className={`flex flex-row rounded overflow-hidden shadow-lg bg-white border-4  cursor-pointer border-white hover:border-cyan-300`}
         onClick={() => onClick?.()}

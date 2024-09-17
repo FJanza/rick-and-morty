@@ -5,7 +5,7 @@ const EpisodesColumn = ({name, episodes, id}: EpisodesColumnProps) => {
   return (
     <div
       className="flex flex-col bg-[rgba(20,20,20,0.8)] overflow-auto p-3 rounded-md "
-      style={{maxHeight: "37dvh", scrollbarWidth: "none", height: "37dvh"}}
+      style={{maxHeight: "35dvh", scrollbarWidth: "none", height: "35dvh"}}
       id={id}
       data-testid={id}
     >

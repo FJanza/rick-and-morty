@@ -42,6 +42,7 @@ export const DialogInfo = ({character}: DialogInfoProps) => {
           color="black"
           className="bg-slate-400 rounded-full p-1 hover:bg-slate-500 absolute bottom-2 right-2 cursor-pointer"
           role="open-button"
+          id="moreInfoButton"
         />
       </AlertDialogTrigger>
       <AlertDialogContent

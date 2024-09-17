@@ -37,7 +37,7 @@ const CharacterSelector = ({onChange, title}: CharacterSelectorProps) => {
   return (
     <div
       className="flex flex-col px-1 sm:px-2 w-full"
-      id={`character-selector-${title}`}
+      id={`character-selector-${title.replace(" ", "")}`}
     >
       {loading ? (
         <div
@@ -54,7 +54,7 @@ const CharacterSelector = ({onChange, title}: CharacterSelectorProps) => {
             <h1 className="font-semibold text-xl">{title}</h1>
 
             <div className="flex flex-row justify-between items-center gap-3">
-              <a href={"#" + title + "-0"}>
+              <a href={"#" + title + "-0"} id="button-left-ch">
                 <Button
                   className="bg-[rgba(96,180,88,0.8)] hover:bg-[rgba(45,114,38,0.8)]"
                   disabled={!Characters?.info.prev}
@@ -70,7 +70,7 @@ const CharacterSelector = ({onChange, title}: CharacterSelectorProps) => {
               <span>
                 {page} / {Characters ? Characters?.info.pages : 48}
               </span>
-              <a href={"#" + title + "-0"}>
+              <a href={"#" + title + "-0"} id="button-right-ch">
                 <Button
                   className="bg-[rgba(96,180,88,0.8)] hover:bg-[rgba(45,114,38,0.8)]"
                   disabled={!Characters?.info.next}
@@ -104,7 +104,7 @@ const CharacterSelector = ({onChange, title}: CharacterSelectorProps) => {
                   <Card
                     isSelected={ch === selectedCharacter}
                     key={ch.name + i}
-                    id={`${title}-` + i}
+                    id={`${title.replace(" ", "")}-` + i}
                     character={ch}
                     onClick={() => {
                       onChange(ch);
