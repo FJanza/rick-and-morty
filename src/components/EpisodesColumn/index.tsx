@@ -10,7 +10,9 @@ const EpisodesColumn = ({name, episodes, id}: EpisodesColumnProps) => {
       data-testid={id}
     >
       <h3 className="font-semibold text-lg">
-        {name && name + " - " + episodes?.length + " Episodes"}
+        {name && name + " - " + episodes && episodes?.length > 0
+          ? episodes?.length
+          : "" + name && " Episodes"}
       </h3>
       {episodes?.length > 0 ? (
         episodes.map((ep) => (

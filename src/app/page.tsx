@@ -44,7 +44,7 @@ export default function Home() {
         },
       },
       {
-        element: "#Character1-0",
+        element: "#container-Character1-0",
         popover: {
           title: "Character",
           description:
@@ -59,6 +59,26 @@ export default function Home() {
           title: "Extra info",
           description:
             "When you click here you will be able to see additional information about the character.",
+          side: "left",
+          align: "end",
+        },
+      },
+      {
+        element: "#episodes-list-character-left",
+        popover: {
+          title: "Episodes List",
+          description:
+            "Here you will see a list with the episodes of the selected character.",
+          side: "left",
+          align: "end",
+        },
+      },
+      {
+        element: "#episodes-list-both-character",
+        popover: {
+          title: "Episodes List",
+          description:
+            "Here you will see a list of the episodes shared by the two selected characters.",
           side: "left",
           align: "end",
         },
@@ -120,7 +140,7 @@ export default function Home() {
           onClick={() => {
             setBoxPressed((prev) => !prev);
           }}
-          className="hidden lg:block absolute z-20  bottom-2 right-7"
+          className="hidden md:block absolute z-20  bottom-2 right-7"
         />
       )}
       {boxPressed && (

@@ -71,7 +71,9 @@ const EpisodesList = ({
         id="episodes-list-character-left"
       />
       <EpisodesColumn
-        name={`${chLeft ?? ""}${chLeft && chRight && " & "}${chRight ?? ""}`}
+        name={`${chLeft ?? ""}${chLeft && chRight ? " & " : ""}${
+          chRight ?? ""
+        }`}
         episodes={epOfTwoCh}
         id="episodes-list-both-character"
       />
